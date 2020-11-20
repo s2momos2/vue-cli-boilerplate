@@ -14,5 +14,18 @@ module.exports = {
       localeDir: 'plugins/locales',
       enableInSFC: true
     }
+  },
+
+  css: {
+    loaderOptions : {
+      sass : {
+        data: `
+                    @import "@/styles/_variables.scss";
+                    @import "@/styles/_mixins.scss";
+                    @import "@/styles/_functions.scss";
+                `
+      }
+    }
   }
+
 }
