@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib';
+import colors from 'vuetify/lib/util/colors'
 
 import ko from 'vuetify/es5/locale/ko'
 import en from 'vuetify/es5/locale/en'
@@ -25,7 +26,7 @@ export default new Vuetify({
       disable: false,
       themes: {
         light: {
-          primary: '#1976D2',
+          primary: colors.purple,
           secondary: '#424242',
           accent: '#82B1FF',
           error: '#FF5252',
@@ -34,7 +35,7 @@ export default new Vuetify({
           warning: '#FB8C00',
         },
         dark: {
-          primary: '#2196F3',
+          primary: colors.blue.lighten3,
           secondary: '#424242',
           accent: '#FF4081',
           error: '#FF5252',

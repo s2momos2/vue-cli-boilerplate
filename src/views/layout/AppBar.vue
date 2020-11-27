@@ -2,6 +2,6 @@
 
 <script>
 export default {
-  name: 'AppBar'
+  name: 'Appbar'
 }
 </script>
