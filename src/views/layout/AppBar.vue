@@ -1,5 +1,6 @@
-<template></template>
-
+<template>
+  <div>appbar</div>
+</template>
 <script>
 export default {
   name: 'Appbar'

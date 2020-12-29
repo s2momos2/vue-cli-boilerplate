@@ -5,6 +5,8 @@ import colors from 'vuetify/lib/util/colors'
 import ko from 'vuetify/es5/locale/ko'
 import en from 'vuetify/es5/locale/en'
 
+import 'vuetify/dist/vuetify.min.css'
+
 Vue.use(Vuetify);
 
 //true로 설정하면 모든 Vuetify 로그 및 경고를 표시하지 않습니다.
@@ -15,9 +17,8 @@ export default new Vuetify({
         current: 'ko',
         locales: { ko, en },
     },
-    icons: { 
-        iconfont: 'fa',
-        values: {},
+    icons: {
+      iconfont: 'mdiSvg', // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
     },
     rtl: false,
     theme: {

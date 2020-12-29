@@ -1,8 +1,11 @@
 <template>
   <v-app>
 
-    <v-navigation-drawer app></v-navigation-drawer>
-    <v-app-bar app></v-app-bar>
+    <v-navigation-drawer v-model="drawer" app></v-navigation-drawer>
+    <v-app-bar app>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title>Application</v-toolbar-title>
+    </v-app-bar>
 
     <v-main>
       <v-container fluid>
@@ -16,9 +19,6 @@
 </template>
 
 <script>
-//import NavigationDrawer from '@/views/layout/NavigationDrawer.vue';
-//import Appbar from '@/views/layout/Appbar.vue';
-//import Footer from '@/views/layout/Footer.vue';
 
 export default {
   name: 'App',
@@ -28,7 +28,7 @@ export default {
   },
 
   data: () => ({
-
+    drawer : false
   }),
 };
 </script>
