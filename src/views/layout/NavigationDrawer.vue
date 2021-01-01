@@ -1,5 +1,5 @@
 <template>
-  <div>navigation drawer</div>
+  <v-navigation-drawer v-model="$store.state.drawer" app></v-navigation-drawer>
 </template>
 
 <script>

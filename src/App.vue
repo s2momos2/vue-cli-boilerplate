@@ -1,30 +1,24 @@
 <template>
   <v-app>
-
-    <v-navigation-drawer v-model="drawer" app></v-navigation-drawer>
-    <v-app-bar app>
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Application</v-toolbar-title>
-    </v-app-bar>
-
-    <v-main>
-      <v-container fluid>
-        <router-view></router-view>
-      </v-container>
-    </v-main>
-
-    <v-footer app></v-footer>
+      <BaseLayout>
+        <v-main>
+          <v-container fluid>
+            <router-view></router-view>
+          </v-container>
+        </v-main>
+      </BaseLayout>
 
   </v-app>
 </template>
 
 <script>
+import BaseLayout from '@/views/layout/BaseLayout.vue'
 
 export default {
   name: 'App',
 
   components: {
-    
+    BaseLayout
   },
 
   data: () => ({
