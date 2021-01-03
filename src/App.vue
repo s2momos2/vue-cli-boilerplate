@@ -21,8 +21,6 @@ export default {
     BaseLayout
   },
 
-  data: () => ({
-    drawer : false
-  }),
+  data: () => ({}),
 };
 </script>
